@@ -4,7 +4,7 @@
   "description": "test",
   "main": "test.js",
   "scripts": {
-    "test": "MOCHA_FILE=./test-result.xml nyc mocha test/test_branch.js --reporter mocha-junit-reporter",
+    "test": "MOCHA_FILE=./test-result.xml nyc mocha ./test/test_branch.js --reporter mocha-junit-reporter",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test"
   },
   "author": "",
